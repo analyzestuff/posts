@@ -87,7 +87,7 @@ main.plot.df$fdr.p.value <- p.adjust(main.plot.df[, "Pr(>|t|)"], method = "fdr")
 library(ggplot2)
 ggplot(main.plot.df,
        aes(x = predictor, y = t, fill = fdr.p.value)) +
-       geom_bar(stat = 'identity') + coord_flip() + 
+       geom_bar(stat = "identity") + coord_flip() + 
        xlab("Predictor of Future Math/Science Occupation") +
        ylab("Predictor t-Statistic") +
        scale_y_continuous(breaks = -10:10) +
@@ -119,7 +119,7 @@ X.plot.df$fdr.p.value <- p.adjust(X.plot.df[, "Pr(>|t|)"], method = "fdr")
 
 ggplot(X.plot.df,
        aes(x = predictor, y = t, fill = p.value)) +
-       geom_bar(stat = 'identity') + coord_flip() + 
+       geom_bar(stat = "identity") + coord_flip() + 
        xlab("Interaction Term") +
        ylab("Interaction t-Statistic") +
        scale_y_continuous(limits = c(-5, 5)) +
