@@ -1,4 +1,5 @@
 # White elephant gift exchange
+# Blog post at http://blog.analyzestuff.com/2013/12/how-fair-is-white-elephant.html
 #
 # Rules:
 # 1) N players each bring one gift
